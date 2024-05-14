@@ -1,0 +1,36 @@
+<div class="container" style="height: 100vh;">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-md-8">
+            <div class="card p-5">
+                <h1 class="mb-4">
+                    <%- title = "Cadastrar-se" %>
+                </h1>
+
+                <form action="/register" method="POST" id="RegisterForm">
+                    <div class="row">
+                        <div class="col-md-6 my-2">
+                            <label for="name">Nome:</label><br>
+                            <input type="text" name="name" id="name" class="px-3" required maxlength="590">
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" name="email" id="email" class="px-3" required>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="cpf">CPF:</label><br>
+                            <input type="text" name="cpf" id="cpf" class="px-3" required>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <label for="password">Senha:</label><br>
+                            <input type="password" name="password" id="password" class="px-3" required>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn mt-3 px-5 py-3">Cadastrar</button>
+                        </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

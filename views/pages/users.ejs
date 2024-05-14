@@ -1,0 +1,38 @@
+<div class="container" style="height: 100vh;">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-md-8">
+            <div class="card p-5">
+                <h1 class="mb-4">
+                    <%- title = "Usuários" %>
+                </h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>CPF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- foreach nos usuários recebidos criando uma linha na tabela para cada um  -->
+                        <% users.forEach(function(user) { %>
+                            <tr>
+                                <td>
+                                    <%= user.name %>
+                                </td>
+                                <td>
+                                    <%= user.email %>
+                                </td>
+                                <td>
+                                    <%= user.cpf %>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+
+                <!--  -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -18,7 +18,9 @@
 
 ### Routes
 **'/' => Rota 'GET'** inicial da aplicação simulando uma pagina de cadastro de usuário.
+
 **'/register' => Rota** 'POST' para receber os dados do formulário de cadastro e validar no Helper os campos.
+
 **'/users' => Rota 'GET'** para visualizar os usuários cadastrados.
 
 ___________________________________________________________
